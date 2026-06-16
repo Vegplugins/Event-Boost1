@@ -1,12 +1,12 @@
 {
-  "name": "Vite_vanilla-app-template",
+  "name": "Event-Boost1",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://tate-t.github.io/Vite_vanilla-app-template/",
+  "homepage": "https://Vegplugins.github.io/Event-Boost1/",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/Vite_vanilla-app-template/",
+    "build": "vite build --base=/Event-Boost1/",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist",
     "predeploy": "npm run build"
