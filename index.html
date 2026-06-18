@@ -1,69 +1,136 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/Event-Boost1/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>EVENT BOOSTER</title>
     
-    <script type="module" crossorigin src="/Event-Boost1/assets/index-99a6ec52.js"></script>
-    <link rel="stylesheet" href="/Event-Boost1/assets/index-66886d44.css">
+    <script type="module" crossorigin src="/Event-Boost1/assets/index-83751521.js"></script>
+    <link rel="stylesheet" href="/Event-Boost1/assets/index-28efbf7a.css">
   </head>
   <body>
-    <section>
-      <h1>Lorem ipsum dolor sit amet.</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/Event-Boost1/assets/javascript-8dac5379.svg" alt="" />
-    </section>
-
     <!-- Loads the specified .html file -->
-    <section class="vite-promo">
-  <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
+     <section class="hero">
+    <div class="hero-logo">
+  <img src="/Event-Boost1/assets/logo-fd68aabe.png" alt="Event Booster" />
+</div>
+  <div class="container hero-container">
+    <h1 class="hero-title">
+        FIND BEST EVENTS
+        <br>
+      AROUND THE WORLD
+    </h1>
+    <div class="search-box">
+  <div class="input-wrapper">
+    <input
+      class="hero-input"
+      type="text"
+      placeholder="Start searching"
+    />
 
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
-        </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
-        </li>
-      </ul>
-    </div>
+    <img
+      class="search-icon"
+      src="./img/search.svg"
+      alt=""
+    />
+  </div>
 
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="/Event-Boost1/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
-    </div>
+  <div class="select-wrapper">
+    <select class="hero-select">
+      <option>Choose country</option>
+    </select>
+
+    <img
+      class="select-icon"
+      src="./img/Polygon.svg"
+      alt=""
+    />
+  </div>
+</div>
   </div>
 </section>
+    <section class="events-section">
+  <div class="events-grid" id="eventsGrid"></div>
 
+  <div class="pagination"></div>
+
+  <div id="modal-container"></div>
+</section>
+
+     <section class="section">
+    <div class="modal-overlay">
+        <div class="inner-modal">
+            <div class="close-button">
+                <h1 id="modal-close">✕</h1>
+            </div>
+                <div class="image1">
+                    <img class="img1" src="../img/pic.png" alt="">
+                    <p id="authorInfo"></p>
+                    <div id="restAuthorInfo"></div>
+                    <button class="btn2">SHOW MORE EVENTS</button>
+
+                </div>
+                <div class="image2">
+                <img class="img2" src="../img/Rectangle8.png" alt="image">
+            </div>
+            <div class="info-section">
+               
+
+                <div class="p1">
+                    <h2>INFO</h2>
+                    <p>Atlas Weekend is the largest music festival<br>
+                        in Ukraine.More than 200 artists will create<br>
+                        a proper music festival atmosphere on 10 stages</p>
+                </div>
+
+                <div class="p1">
+                    <h2>WHEN</h2>
+                    <p>2021-06-09<br>
+                        20:00 (Kyiv/Ukraine)
+                    </p>
+                </div>
+
+                <div class="p1">
+                    <h2>WHERE</h2>
+                    <p>
+                        Kyiv, Ukraine<br>
+                        VDNH</p>
+                </div>
+
+                <div class="p1">
+                    <h2>WHO</h2>
+                    <p>The Black Eyed Peas</p>
+                </div>
+
+                <div class="p1">
+                    <h2>PRICES</h2>
+                    <p>Standart 300-500 UAH</p>
+                </div>
+                <button id="standard-tickets">BUY TICKETS</button>
+
+                <p>VIP 1000-1500 UAH</p>
+                <button id="vip-tickets">BUY TICKETS</button>
+                <br>
+                <br>
+                
+
+            <div class="author-div">
+                <button class="btn">MORE FROM THIS AUTHOR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+         <footer class="footer">
+  <ul class="footer__list">
+    <li>© 2021</li>
+    <li>All Rights Reserved</li>
+    <li>
+      Developed with <span class="footer__heart">❤</span> by GoIT Students6767767676
+    </li>
+  </ul>
+</footer>
 
     
   </body>
