@@ -1,0 +1,152 @@
+.hero {
+  position: relative;
+  background-image: url("../img/pic.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+  padding-top: 80px;
+  padding-bottom: 112px;
+  width: 100%;
+  min-height: 60vh;
+}
+
+.hero-container {
+  text-align: center;
+}
+
+.hero-title {
+  max-width: 212px;
+  margin: 0 auto;
+
+  color: #dc56c5;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 1.2;
+
+  padding-bottom: 25px;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url("../img/pic.svg");
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero {
+    background-image: url("../img/pic.svg");
+  }
+}
+
+.hero-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 106px;
+  height: 90px;
+
+  background: rgba(0, 0, 0, 0.12);
+
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  clip-path: ellipse(100% 90% at 0% 0%);
+}
+.search-box {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .search-box {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+.input-wrapper,
+.select-wrapper {
+  position: relative;
+  width: 270px;
+}
+.hero-input,
+.hero-select {
+  width: 270px;
+  height: 50px;
+
+  padding-left: 30px;
+  padding-right: 45px;
+
+  border: none;
+  outline: none;
+  border-radius: 20px;
+
+  color: #939393;
+  font-size: 16px;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+.hero-input::placeholder {
+  color: #939393;
+}
+.hero-select {
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+.search-icon,
+.select-icon {
+  position: absolute;
+
+  top: 50%;
+  right: 20px;
+
+  width: 16px;
+  height: 16px;
+
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 40px;
+    padding-bottom: 180px;
+    width: 100%;
+  }
+
+  .hero-title {
+    max-width: 380px;
+    font-size: 30px;
+    padding-bottom: 30px;
+  }
+
+  .hero-logo {
+    width: 180px;
+    height: 150px;
+  }
+
+  .search-box {
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero {
+    padding-bottom: 200px;
+  }
+
+  .hero-title {
+    max-width: 710px;
+    font-size: 60px;
+    padding-bottom: 52px;
+  }
+
+  .hero-logo {
+    width: 230px;
+    height: 180px;
+  }
+}

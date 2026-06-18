@@ -1,0 +1,169 @@
+.section {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.p1 {
+    margin-top: 20px;
+}
+
+h2 {
+    color: #DC56C5;
+}
+
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+#modal-close {
+    color:#4C00FE;
+}
+
+
+
+.image1 {
+    margin-top: 230px;
+    margin-right: 10px;
+    margin-left: 30px;
+}
+
+.image2 {
+    margin-right: 30px;
+    margin-top: 30px;
+    display: flex;
+    align-items: first baseline;
+}
+
+.img2 {
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    overflow-y: auto;
+
+    background: rgba(0, 0, 0, 0.5);
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+
+    z-index: 1000;
+}
+
+.modal-overlay.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.info-section {
+    margin-right: 80px;
+}
+
+.inner-modal {
+    position: relative;
+    top: 59%;
+    left: 50%;
+    display: flex;
+    justify-content:center;
+
+    width: 730px;
+    height: 850px;
+
+    background: #FFF2FD;
+    border-radius: 300px 0;
+
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0;
+
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.modal-overlay.show .inner-modal {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+
+#standard-tickets {
+    border: none;
+    color: white;
+    background-color: #4C00FE;
+
+    width: 135px;
+    height: 30px;
+
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#vip-tickets {
+    border: none;
+    color: white;
+    background-color: #4C00FE;
+
+    width: 135px;
+    height: 30px;
+
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#standard-tickets:hover {
+    background-color: #3800ba;
+}
+
+#vip-tickets:hover {
+    background-color: #3800ba;
+}
+
+.btn {
+    width: 220px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px  solid #4C00FE;
+    color: #4C00FE;
+    background-color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color:azure;
+
+}
+
+.author-div {
+    margin-right: 70px;
+}
+
+#authorInfo {
+    display: none;
+}
+
+#restAuthorInfo {
+    display: none;
+}
+
+.btn2 {
+    display: none;
+    margin-top: 9px;
+    width: 220px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px  solid #4C00FE;
+    color: #4C00FE;
+    background-color: white;
+    cursor: pointer;
+}
+
+.btn2:hover {
+    background-color:azure;
+
+}
